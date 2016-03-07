@@ -1,0 +1,23 @@
+#如果使用了spring-boot-starter-parent,那么maven的filter需要使用 @***@来替换${***}
+#spring.profiles.active: @profiles.active@
+
+# Server settings (ServerProperties)
+server:
+  port: 8080
+  #address: 127.0.0.1
+  session.timeout: 30
+  contextPath: /
+
+  # Tomcat specifics
+  tomcat:
+    accesslog.enabled: false
+    protocolHeader: x-forwarded-proto
+    remoteIpHeader: x-forwarded-for
+    basedir:
+    backgroundProcessorDelay: 30 # secs
+
+spring:
+  main:
+    banner-mode: OFF
+  velocity.toolbox-config-location: config/toolbox.xml
+logging.config: classpath:logback.xml

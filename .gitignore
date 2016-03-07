@@ -1,0 +1,17 @@
+.classpath
+.project
+.settings/
+/target/
+/bin/
+/lib/
+/team/codeStyle_codeTemplates_comments - *.xml
+logs/
+*.log
+appConfig.personal
+.DS_Store
+.idea/
+*.iml
+.mvn/
+rebel.xml
+*.class
+target/
